@@ -1,0 +1,218 @@
+[
+  {
+    "name": "CsrActiveConfig",
+    "values": [
+      {
+        "name": "CSR_ALLOW_UNTRUSTED_KEXTS",
+        "value": "0x1"
+      },
+      {
+        "name": "CSR_ALLOW_UNRESTRICTED_FS",
+        "value": "0x2"
+      },
+      {
+        "name": "CSR_ALLOW_TASK_FOR_PID",
+        "value": "0x4"
+      },
+      {
+        "name": "CSR_ALLOW_KERNEL_DEBUGGER",
+        "value": "0x8"
+      },
+      {
+        "name": "CSR_ALLOW_APPLE_INTERNAL",
+        "value": "0x10"
+      },
+      {
+        "name": "CSR_ALLOW_UNRESTRICTED_DTRACE",
+        "value": "0x20"
+      },
+      {
+        "name": "CSR_ALLOW_UNRESTRICTED_NVRAM",
+        "value": "0x40"
+      },
+      {
+        "name": "CSR_ALLOW_DEVICE_CONFIGURATION",
+        "value": "0x80"
+      },
+      {
+        "name": "CSR_ALLOW_ANY_RECOVERY_OS",
+        "value": "0x100"
+      },
+      {
+        "name": "CSR_ALLOW_UNAPPROVED_KEXTS",
+        "value": "0x200"
+      },
+      {
+        "name": "CSR_ALLOW_EXECUTABLE_POLICY_OVERRIDE",
+        "value": "0x400"
+      }
+    ],
+    "is_hex": true
+  },
+  {
+    "name": "PickerAttributes",
+    "values": [
+      {
+        "name": "OC_ATTR_USE_VOLUME_ICON",
+        "value": "0x1"
+      },
+      {
+        "name": "OC_ATTR_USE_DISK_LABEL_FILE",
+        "value": "0x2"
+      },
+      {
+        "name": "OC_ATTR_USE_GENERIC_LABEL_IMAGE",
+        "value": "0x4"
+      },
+      {
+        "name": "OC_ATTR_USE_ALTERNATE_ICONS",
+        "value": "0x8"
+      },
+      {
+        "name": "OC_ATTR_USE_POINTER_CONTROL",
+        "value": "0x10"
+      }
+    ],
+    "is_hex": true
+  },
+  {
+    "name": "DisplayLevel",
+    "values": [
+      {
+        "name": "DEBUG_WARN in DEBUG, NOOPT, RELEASE",
+        "value": "0x2"
+      },
+      {
+        "name": "DEBUG_INFO in DEBUG, NOOPT",
+        "value": "0x40"
+      },
+      {
+        "name": "DEBUG_VERBOSE in custom builds",
+        "value": "0x400000"
+      },
+      {
+        "name": "DEBUG_ERROR in DEBUG, NOOPT, RELEASE",
+        "value": "0x80000000"
+      }
+    ],
+    "is_hex": true
+  },
+  {
+    "name": "Target",
+    "values": [
+      {
+        "name": "Enable Logging",
+        "value": "0x1"
+      },
+      {
+        "name": "Enable basic console (onscreen) logging",
+        "value": "0x2"
+      },
+      {
+        "name": "Enable logging to Data Hub",
+        "value": "0x4"
+      },
+      {
+        "name": "Enable serial port logging",
+        "value": "0x8"
+      },
+      {
+        "name": "Enable UEFI variable logging",
+        "value": "0x10"
+      },
+      {
+        "name": "Enable non-volatile UEFI variable logging",
+        "value": "0x20"
+      },
+      {
+        "name": "Enable logging to file",
+        "value": "0x40"
+      }
+    ],
+    "is_hex": true
+  },
+  {
+    "name": "ExposeSensitiveData",
+    "values": [
+      {
+        "name": "Expose printable booter path as UEFI variable",
+        "value": "0x1"
+      },
+      {
+        "name": "Expose OpenCore version as UEFI variable",
+        "value": "0x2"
+      },
+      {
+        "name": "Expose OpenCore version in boot picker menu title",
+        "value": "0x4"
+      },
+      {
+        "name": "Expose OEM information as a set of UEFI variables",
+        "value": "0x8"
+      }
+    ],
+    "is_hex": true
+  },
+  {
+    "name": "ScanPolicy",
+    "values": [
+      {
+        "name": "OC_SCAN_FILE_SYSTEM_LOCK",
+        "value": "0x1"
+      },
+      {
+        "name": "OC_SCAN_DEVICE_LOCK",
+        "value": "0x2"
+      },
+      {
+        "name": "OC_SCAN_ALLOW_FS_APFS",
+        "value": "0x100"
+      },
+      {
+        "name": "OC_SCAN_ALLOW_FS_HFS",
+        "value": "0x200"
+      },
+      {
+        "name": "OC_SCAN_ALLOW_FS_ESP",
+        "value": "0x400"
+      },
+      {
+        "name": "OC_SCAN_ALLOW_DEVICE_SATA",
+        "value": "0x10000"
+      },
+      {
+        "name": "OC_SCAN_ALLOW_DEVICE_SASEX",
+        "value": "0x20000"
+      },
+      {
+        "name": "OC_SCAN_ALLOW_DEVICE_SCSI",
+        "value": "0x40000"
+      },
+      {
+        "name": "OC_SCAN_ALLOW_DEVICE_NVME",
+        "value": "0x80000"
+      },
+      {
+        "name": "OC_SCAN_ALLOW_DEVICE_ATAPI",
+        "value": "0x100000"
+      },
+      {
+        "name": "OC_SCAN_ALLOW_DEVICE_USB",
+        "value": "0x200000"
+      },
+      {
+        "name": "OC_SCAN_ALLOW_DEVICE_FIREWIRE",
+        "value": "0x400000"
+      },
+      {
+        "name": "OC_SCAN_ALLOW_DEVICE_SDCARD",
+        "value": "0x800000"
+      },
+      {
+        "name": "OC_SCAN_ALLOW_DEVICE_PCI",
+        "value": "0x1000000"
+      }
+    ],
+    "is_hex": true
+  }
+]
