@@ -45,6 +45,10 @@
       {
         "name": "CSR_ALLOW_EXECUTABLE_POLICY_OVERRIDE",
         "value": "0x400"
+      },
+      {
+        "name": "CSR_ALLOW_UNAUTHENTICATED_ROOT",
+        "value": "0x800"
       }
     ],
     "is_hex": true
