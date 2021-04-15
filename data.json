@@ -69,12 +69,20 @@
         "value": "0x4"
       },
       {
-        "name": "OC_ATTR_USE_ALTERNATE_ICONS",
+        "name": "OC_ATTR_HIDE_THEMED_ICONS",
         "value": "0x8"
       },
       {
         "name": "OC_ATTR_USE_POINTER_CONTROL",
         "value": "0x10"
+      },
+      {
+        "name": "OC_ATTR_SHOW_DEBUG_DISPLAY",
+        "value": "0x20"
+      },
+      {
+        "name": "OC_ATTR_USE_MINIMAL_UI",
+        "value": "0x40"
       }
     ],
     "is_hex": true
@@ -179,6 +187,14 @@
       {
         "name": "OC_SCAN_ALLOW_FS_ESP",
         "value": "0x400"
+      },
+      {
+        "name": "OC_SCAN_ALLOW_FS_NTFS",
+        "value": "0x800"
+      },
+      {
+        "name": "OC_SCAN_ALLOW_FS_EXT",
+        "value": "0x1000"
       },
       {
         "name": "OC_SCAN_ALLOW_DEVICE_SATA",
