@@ -83,6 +83,10 @@
       {
         "name": "OC_ATTR_USE_MINIMAL_UI",
         "value": "0x40"
+      },
+      {
+        "name": "OC_ATTR_USE_FLAVOUR_ICON",
+        "value": "0x80"
       }
     ],
     "is_hex": true
@@ -193,8 +197,16 @@
         "value": "0x800"
       },
       {
-        "name": "OC_SCAN_ALLOW_FS_EXT",
+        "name": "OC_SCAN_ALLOW_FS_LINUX_ROOT",
         "value": "0x1000"
+      },
+      {
+        "name": "OC_SCAN_ALLOW_FS_LINUX_DATA",
+        "value": "0x2000"
+      },
+      {
+        "name": "OC_SCAN_ALLOW_FS_XBOOTLDR",
+        "value": "0x4000"
       },
       {
         "name": "OC_SCAN_ALLOW_DEVICE_SATA",
