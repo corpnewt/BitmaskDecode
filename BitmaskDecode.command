@@ -49,7 +49,7 @@ def num_to_vals(number,bit_dict):
     # and find out which values we have enabled
     dec = get_decimal(number)
     if not dec: return []
-    return ["{} - {}".format(bit_dict[x],get_str_rep(x)) for x in sorted(bit_dict) if x & dec]
+    return [(bit_dict[x],get_str_rep(x)) for x in sorted(bit_dict) if x & dec]
 
 def main(self_name,bit_dict):
     while True:
@@ -88,7 +88,9 @@ def n_to_v(self_name,bit_dict):
         elif h.lower() == "q": exit()
         has = num_to_vals(h,bit_dict)
         if not len(has): print("\nNo values found.\n")
-        else: print("\nActive values for {}:\n\n{}\n".format(get_str_rep(h),"\n".join(has)))
+        else:
+            pad_to = max((len(x[0]) for x in has))
+            print("\nActive values for {}:\n\n{}\n".format(get_str_rep(h),"\n".join(["{} - {}".format(x[0].ljust(pad_to),x[1]) for x in has])))
 
 def v_to_n(self_name,bit_dict):
     # Create a dict with all values unchecked
@@ -100,8 +102,9 @@ def v_to_n(self_name,bit_dict):
         # Print them out
         if not len(toggle_list): print(" - None found :(")
         else:
+            pad_to = max((len(x["name"]) for x in toggle_list))
             for x,y in enumerate(toggle_list,1):
-                print("[{}] {}. {} - {}".format("#" if y["enabled"] else " ", str(x).rjust(2), y["name"],get_str_rep(y["value"])))
+                print("[{}] {}. {} - {}".format("#" if y["enabled"] else " ", str(x).rjust(2), y["name"].ljust(pad_to),get_str_rep(y["value"])))
         print("")
         # Add the values of the enabled together
         curr = sum([x["value"] for x in toggle_list if x["enabled"]])
