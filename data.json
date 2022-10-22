@@ -246,5 +246,67 @@
       }
     ],
     "is_hex": true
+  },
+  {
+    "name": "StartupPowerEvents",
+    "values": [
+      {
+        "name": "Shutdown cause was a PWROK event (GEN_PMCON_2 bit 0)",
+        "value": "0x1"
+      },
+      {
+        "name": "Shutdown cause was a SYS_PWROK event (GEN_PMCON_2 bit 1)",
+        "value": "0x2"
+      },
+      {
+        "name": "Shutdown cause was a THRMTRIP# event (GEN_PMCON_2 bit 3)",
+        "value": "0x4"
+      },
+      {
+        "name": "Rebooted due to a SYS_RESET# event (GEN_PMCON_2 bit 4)",
+        "value": "0x8"
+      },
+      {
+        "name": "Power Failure (GEN_PMCON_3 bit 1, PWR_FLR)",
+        "value": "0x10"
+      },
+      {
+        "name": "Loss of RTC Well Power (GEN_PMCON_3 bit 2, RTC_PWR_STS)",
+        "value": "0x20"
+      },
+      {
+        "name": "General Reset Status (GEN_PMCON_3 bit 9, GEN_RST_STS)",
+        "value": "0x40"
+      },
+      {
+        "name": "SUS Well Power Loss - 0xffffff80 (GEN_PMCON_3 bit 14)",
+        "value": "0xFFFFFF80"
+      },
+      {
+        "name": "ME Wake Event (PRSTS bit 0, ME_WAKE_STS)",
+        "value": "0x10000"
+      },
+      {
+        "name": "ME Cold Reboot (PRSTS bit 1, ME_HRST_COLD_STS)",
+        "value": "0x20000"
+      },
+      {
+        "name": "ME Warm Reboot (PRSTS bit 2, ME_HRST_WARM_STS)",
+        "value": "0x40000"
+      },
+      {
+        "name": "ME Shutdown (PRSTS bit 3, ME_HOST_PWRDN)",
+        "value": "0x80000"
+      },
+      {
+        "name": "Global reset ME Watchdog Timer (PRSTS bit 6)",
+        "value": "0x100000"
+      },
+      {
+        "name": "Global reset PowerManagement Watchdog Timer (PRSTS bit 15)",
+        "value": "0x200000"
+      }
+    ],
+    "is_hex": true
   }
 ]
