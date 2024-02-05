@@ -87,6 +87,14 @@
       {
         "name": "OC_ATTR_USE_FLAVOUR_ICON",
         "value": "0x80"
+      },
+      {
+        "name": "OC_ATTR_USE_REVERSED_UI",
+        "value": "0x100"
+      },
+      {
+        "name": "OC_ATTR_REDUCE_MOTION",
+        "value": "0x200"
       }
     ],
     "is_hex": true
