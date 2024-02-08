@@ -316,5 +316,75 @@
       }
     ],
     "is_hex": true
+  },
+  {
+    "name": "Memory TypeDetail",
+    "values": [
+      {
+        "name": "Reserved, set to 0",
+        "value": "0x1"
+      },
+      {
+        "name": "Other",
+        "value": "0x2"
+      },
+      {
+        "name": "Unknown",
+        "value": "0x4"
+      },
+      {
+        "name": "Fast-paged",
+        "value": "0x8"
+      },
+      {
+        "name": "Static column",
+        "value": "0x10"
+      },
+      {
+        "name": "Pseudo-static",
+        "value": "0x20"
+      },
+      {
+        "name": "RAMBUS",
+        "value": "0x40"
+      },
+      {
+        "name": "Synchronous",
+        "value": "0x80"
+      },
+      {
+        "name": "CMOS",
+        "value": "0x100"
+      },
+      {
+        "name": "EDO",
+        "value": "0x200"
+      },
+      {
+        "name": "Window DRAM",
+        "value": "0x400"
+      },
+      {
+        "name": "Cache DRAM",
+        "value": "0x800"
+      },
+      {
+        "name": "Non-volatile",
+        "value": "0x1000"
+      },
+      {
+        "name": "Registered (Buffered)",
+        "value": "0x2000"
+      },
+      {
+        "name": "Unbuffred (Unregistered)",
+        "value": "0x4000"
+      },
+      {
+        "name": "Reserved, set to 0",
+        "value": "0x8000"
+      }
+    ],
+    "is_hex": true
   }
 ]
