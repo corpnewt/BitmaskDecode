@@ -151,6 +151,10 @@
       {
         "name": "Enable logging to file",
         "value": "0x40"
+      },
+      {
+        "name": "In combination with 0x40, enable faster but unsafe file logging",
+        "value": "0x80"
       }
     ],
     "is_hex": true
